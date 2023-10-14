@@ -63,3 +63,12 @@ Login to Kibana using username elastic and password which we fetch in step 1.
 
 ![image](https://github.com/tushardashpute/EFK_setup/assets/74225291/7c0fc6a8-095a-4d2f-993c-8b7b4a3dbcd3)
 
+Added nginx helm chart as well :
+
+ helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
+[root@ip-172-31-16-18 ~]#
+[root@ip-172-31-16-18 ~]# helm install mywebserver bitnami/nginx
+
+![image](https://github.com/tushardashpute/EFK_setup/assets/74225291/bbdf87c6-ba5b-4896-94cc-cd09a3089066)
+

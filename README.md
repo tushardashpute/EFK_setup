@@ -56,7 +56,10 @@ Install Springboot Sample App:
             kubectl apply -f springboot-deployment.yaml
             kubectl apply -f springboot-service.yaml
 
-Login to Kibana using username elastic and password which we fetch in step 1.
+Login to Kibana using username elastic and password:
+
+kubectl get secrets --namespace=default elasticsearch-master-credentials -ojsonpath='{.data.password}' | base64 -d
+
 
 ![image](https://github.com/tushardashpute/EFK_setup/assets/74225291/e9db8033-4b75-4606-a69f-42165844d623)
 
